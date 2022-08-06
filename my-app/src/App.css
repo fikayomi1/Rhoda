@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Nav-links {
+  height : 7vh;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.Nav-links ul {
+  list-style-type: none;
+  margin: auto 25%;
+  padding-top: 1.5%;
+  padding-left:5%;
+  width: 50%;
+  /* border: 2px solid white; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  background: transparent
+}
+
+.Nav-links li {
+  float: left;
+}
+
+.Nav-links li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 11px 25px;
+  text-decoration: none;
+  font-size: large;
+}
+.App{
+  background: linear-gradient(to bottom right, black, #272f3f);
+}
+.App-header{
+  /* background-color: #272f3f; */
+  /* background: linear-gradient(to bottom right, black, #272f3f); */
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: bottom;
+  justify-content: bottom; */
+  font-size: calc(11px + 2vmin);
+  color: rgba(255, 255, 255, 0.932);
+  /* border: 2px solid red; */
+
+  
+}
+.App-header h4{
+  /* text-align: center; */
+  text-align: center;
+  padding-top: 45vh;
+  animation-name: example;
+  animation-duration: 2s;
+  /* border: 2px solid red; */
+  
+}
+
+
+@keyframes example {
+  0% {padding-top : 90vh }
+  50% {padding-top : 40vh }
+  100% {padding-top : 45vh }
+}
+
+
+
+
+
+
+.App2-header{
+  background-color: rgb(235, 235, 235);
+  height: 4vh;
+  
+}
+.App2-header h1{
+  font-size: 2vh;
+  text-align: center;
+}
+.App2-box{
+  margin: 20px auto;
+  width: 80%;
+  padding-left : 30px;
+  padding: 3%;
+  border-radius: 5px;
+  background-color: #1f2531;
+  color: rgba(255, 255, 255, 0.904);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.App2-box p{
+  
+  font-style: italic;
+  font-size: 2.0em;
+}
+
+
+
+.App3-header{
+  background-color: rgb(235, 235, 235);
+  height: 30vh;
+}
+.App4-header{
+  background-color: rgb(235, 235, 235);
+  height: 30vh;
+}
+.App5{
+  text-align: center;
+}
+.App5-header{
+  background-color: rgb(235, 235, 235);
+  height: 30vh;
+}
