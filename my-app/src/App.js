@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
+import pic from './OLAS.jpg';
+import pic1 from "./images/First One.jpg";
+import pic2 from "./images/Second One.jpg";
+import pic3 from "./images/Third One.jpg";
+import pic4 from "./images/Fourth One.jpg";
+import pic5 from "./images/Fifth One.jpg";
+import pic6 from "./images/Sixth One.jpg";
+import pic7 from "./images/Seventh One.jpg";
+import pic8 from "./images/Eight One.jpg";
+
 
 
 
@@ -41,12 +51,16 @@ function HomeSection() {
 //Props not working with functional components
 function FirstSection(){
     return (
-      <div>
+      <div id = "About" className = "App2">
         {/* <div className = "App2-header" id = "About">
           <h1>The Details Section is here </h1>
         </div> */}
-        <div>
-          <img src = {'./Image.png'} alt = "Just me"></ img>
+        <div className = "Image">
+          <img src = {pic} alt = "Just me"/>
+          <div>
+            <p>Odedunmoye Olaoluwa</p>
+            <p>FrontEnd Developer</p>
+          </div>
         </div>
         <div className = "App2-box">
           <p>
@@ -69,8 +83,41 @@ function FirstSection(){
 function SecondSection(){
   return(
     <div className = "App3">
-      <h1 className = "App3-header" id = "pic"> The Pictures Section is here</h1>
-      
+      <h3>Gallery Arena</h3>
+      <div className = "App3-pictures">
+      <div className = "Pictures">
+        <img src = {pic1} alt = "pic" />
+        <div><p>First Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic2} alt = "pic"/>
+        <div><p>Second Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic3} alt = "pic"/>
+        <div><p>Third Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic4} alt = "pic"/>
+        <div><p>Fourth Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic5} alt = "pic"/>
+        <div><p>Fifth Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic6} alt = "pic"/>
+        <div><p>Sixth Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic7} alt = "pic"/>
+        <div><p>Seventh Picture</p></div>
+      </div>
+      <div className = "Pictures">
+        <img src = {pic8} alt = "pic"/>
+        <div><p>Eight Picture</p></div>
+      </div>
+      </div>
 
     </div>
   )

@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
-
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 .Nav-links {
   height : 7vh;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -34,6 +38,8 @@
 }
 .App{
   background: linear-gradient(to bottom right, black, #272f3f);
+  background-attachment: fixed;
+  scroll-snap-align: center;
 }
 .App-header{
   /* background-color: #272f3f; */
@@ -54,23 +60,33 @@
   text-align: center;
   padding-top: 45vh;
   animation-name: example;
-  animation-duration: 2s;
+  animation-duration: 3s;
   /* border: 2px solid red; */
   
 }
 
 
+
+
+
 @keyframes example {
-  0% {padding-top : 90vh }
+  0% {padding-top : 90vh; color: #272f3f  }
   50% {padding-top : 40vh }
-  100% {padding-top : 45vh }
+  100% {padding-top : 45vh;   color: rgba(255, 255, 255, 0.932);
+  }
 }
 
 
 
 
 
-
+.App2{
+  background-attachment: fixed;
+  scroll-snap-align: center;
+  display: flex;
+  border: 2px solid black;
+  height : 100vh;
+}
 .App2-header{
   background-color: rgb(235, 235, 235);
   height: 4vh;
@@ -80,36 +96,85 @@
   font-size: 2vh;
   text-align: center;
 }
-.App2-box{
+.Image{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2%;
+}
+.App2 img{
+  max-width: 100%;
+  /* border-radius: 50%; */
+  /* padding: 6%; */
   margin: 20px auto;
-  width: 80%;
-  padding-left : 30px;
-  padding: 3%;
+  justify-content: space-around;
+  /* margin: 10px; */
+  height: 330px;
+  /* border: 2px solid black; */
+}
+.Image p{
+  text-align: center;
+  
+}
+.App2-box{
+  margin: 30px auto;
+  width: 100%;
+  height: 350px;
+  justify-content: space-around;
   border-radius: 5px;
   background-color: #1f2531;
   color: rgba(255, 255, 255, 0.904);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid black;
 }
 .App2-box p{
   
   font-style: italic;
-  font-size: 2.0em;
+  font-size: 1.0em;
 }
 
+.App3{
+  background-attachment: fixed;
+  scroll-snap-align: center;
+}
+.App3-pictures{
+  display : flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
 
+}
+.App3-pictures img{
+  width: 250px;
+  height: 30vh;
+  opacity:0.9;
+  transition: opacity 1s;
+  transition-timing-function: ease-in-out
+}
+
+.App3-pictures img:hover{
+  width: 260px;
+  opacity: 1;
+}
+.Pictures{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin: 2%;
+
+}
 
 .App3-header{
-  background-color: rgb(235, 235, 235);
+  background-color: #fff;
   height: 30vh;
 }
+.App4{
+  scroll-snap-align: center;
+}
 .App4-header{
-  background-color: rgb(235, 235, 235);
+  background-color: #fff;
   height: 30vh;
 }
 .App5{
   text-align: center;
+  scroll-snap-align: center;
 }
 .App5-header{
-  background-color: rgb(235, 235, 235);
-  height: 30vh;
+  background-color: #fff;
 }
